@@ -1,0 +1,93 @@
+/* hamburger menu */
+#mainbox{
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+#mainbox:active{
+  color: chartreuse;
+}
+
+.sidemenu{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0px;
+  background: #222;
+  z-index: 1;
+  padding-top: 100px;
+  overflow-x: hidden;
+  transition: all .4s;
+}
+
+.sidemenu a{
+  padding: 8px 8px 8px 64px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #999;
+  display: block;
+}
+
+.sidemenu a:hover{
+  color: white;
+}
+
+.sidemenu .closebtn{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 32px;
+  background: #222;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.sidemenu .closebtn:active{
+  color: white;
+}
+
+.dropdown-menu{
+  margin-left: 70px;
+  padding: 0;
+  background: rgb(51, 50, 50);
+}
+
+/* table */
+.customTable{
+  max-width: 1140px;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.801);
+}
+
+td{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+}
+
+th {
+  background-color: #55608f;
+}
+
+.form-group select,
+.form-group input,
+.form-group textarea{
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #000000;
+}
+
+
+@media (min-width: 992px) {
+  .offset-lg-3 {
+    margin-left: 30%;
+  }
+}
